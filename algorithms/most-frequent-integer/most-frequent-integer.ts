@@ -4,6 +4,7 @@
  *
  */
 
+ // TODO: Cover other edge cases.
 const testCases : Array<Array<number>> = [
   // Case 1: [1, 2, 2, 4, 0.5, 0.5, 0.5, 3] => 2
   [1, 2, 2, 4, 0.5, 0.5, 0.5, 3, 2],
@@ -21,6 +22,7 @@ const testCases : Array<Array<number>> = [
   [-99, -99, -99, 1, -17, 0, 1, -99]
 ];
 
+// TODO: Implement.
 function getMostFrequentIntegerOf(integers : Array<number>) : number {
   return 0;
 }
