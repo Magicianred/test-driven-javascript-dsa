@@ -24,26 +24,25 @@ const testCases : Array<Array<number>> = [
   [Number.MIN_VALUE, Number.MIN_VALUE, 1, 1],
 
   // Case 7: [Number.POSITIVE_INFINITY, Number.POSITIVE_INFINITY, 0] => Number.POSITIVE_INFINITY
-  [Number.POSITIVE_INFINITY, Number.POSITIVE_INFINITY, 0, Number.POSITIVE_INFINITY],
+  [Number.POSITIVE_INFINITY, Number.POSITIVE_INFINITY, 0, 0],
 
   // Case 8: [Number.NEGATIVE_INFINITY, Number.NEGATIVE_INFINITY, 0] => Number.NEGATIVE_INFINITY
-  [Number.NEGATIVE_INFINITY, Number.NEGATIVE_INFINITY, 0, Number.NEGATIVE_INFINITY],
+  [Number.NEGATIVE_INFINITY, Number.NEGATIVE_INFINITY, 0, 0],
 
   // Case 9: [1, 1] => 1
   [1, 1]
 ];
 
-function getMostFrequentIntegerOf(integers : Array<number>) : number {
-  const frequencies : Object = {};
-  let mostFrequentInteger : number = 0;
+function getMostFrequentIntegerOf(numbers : Array<number>) : number {
+  let mostFrequent : number = 0;
+  const count : Object = {};
 
-  integers.forEach((x : number) : void => { 
-    x % 1 === 0 && frequencies[`${x}`] ? frequencies[`${x}`]++ : frequencies[`${x}`] = 1;
-    if (frequencies[`${x}`] > (frequencies[`${mostFrequentInteger}`] ?? 0))
-      mostFrequentInteger = x;
-  });
+  for (const x of numbers) {
+      if (x % 1 === 0) count[`${x}`] ? count[`${x}`]++ : count[`${x}`] = 1;
+      if (count[`${x}`] > (count[`${mostFrequent}`] ?? 0)) mostFrequent = x;
+  };
 
-  return mostFrequentInteger;
+  return mostFrequent;
 }
 
 testCases.forEach((testCase : Array<number>): void => {
