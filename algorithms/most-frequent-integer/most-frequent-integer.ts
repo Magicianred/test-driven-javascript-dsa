@@ -38,8 +38,8 @@ function getMostFrequentIntegerOf(numbers : Array<number>) : number {
   const count : Object = {};
 
   for (const x of numbers) {
-      if (x % 1 === 0) count[`${x}`] ? count[`${x}`]++ : count[`${x}`] = 1;
-      if (count[`${x}`] > (count[`${mostFrequent}`] ?? 0)) mostFrequent = x;
+    if (x % 1 === 0) count[`${x}`] ? count[`${x}`]++ : count[`${x}`] = 1;
+    if (count[`${x}`] > (count[`${mostFrequent}`] ?? 0)) mostFrequent = x;
   };
 
   return mostFrequent;
