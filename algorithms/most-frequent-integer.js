@@ -4,7 +4,9 @@
  *
  */
 
-const testCases : Array<Array<number>> = [
+const testingUtils = require('./testing-utils.js');
+
+const testCases = [
   // Case 1: [1, 2, 2, 4, 0.5, 0.5, 0.5, 3] => 2
   [1, 2, 2, 4, 0.5, 0.5, 0.5, 3, 2],
   
@@ -17,25 +19,25 @@ const testCases : Array<Array<number>> = [
   // Case 4: [-99, -99, -99, 1, -17, 0, 1, -99] => -99
   [-99, -99, -99, 1, -17, 0, 1, -99],
 
-  // Case 5: [Number.MAX_VALUE, Number.MAX_VALUE, 1] => Number.MAX_VALUE
+  // Case 5: [Number.MAX_VALUE, Number.MAX_VALUE, 1] => 1.7976931348623157e+308
   [Number.MAX_VALUE, Number.MAX_VALUE, 1, Number.MAX_VALUE],
 
   // Case 6: [Number.MIN_VALUE, Number.MIN_VALUE, 1] => 1
   [Number.MIN_VALUE, Number.MIN_VALUE, 1, 1],
 
-  // Case 7: [Number.POSITIVE_INFINITY, Number.POSITIVE_INFINITY, 0] => Number.POSITIVE_INFINITY
+  // Case 7: [Number.POSITIVE_INFINITY, Number.POSITIVE_INFINITY, 0] => 0
   [Number.POSITIVE_INFINITY, Number.POSITIVE_INFINITY, 0, 0],
 
-  // Case 8: [Number.NEGATIVE_INFINITY, Number.NEGATIVE_INFINITY, 0] => Number.NEGATIVE_INFINITY
+  // Case 8: [Number.NEGATIVE_INFINITY, Number.NEGATIVE_INFINITY, 0] => 0
   [Number.NEGATIVE_INFINITY, Number.NEGATIVE_INFINITY, 0, 0],
 
   // Case 9: [1, 1] => 1
   [1, 1]
 ];
 
-function getMostFrequentIntegerOf(numbers : Array<number>) : number {
-  let mostFrequent : number = 0;
-  const count : Object = {};
+function getMostFrequentIntegerOf(numbers) {
+  let mostFrequent = 0;
+  const count = {};
 
   for (const x of numbers) {
     if (x % 1 === 0) count[`${x}`] ? count[`${x}`]++ : count[`${x}`] = 1;
@@ -45,11 +47,4 @@ function getMostFrequentIntegerOf(numbers : Array<number>) : number {
   return mostFrequent;
 }
 
-testCases.forEach((testCase : Array<number>): void => {
-  const
-    expectedOutput : number = testCase.pop(),
-    actualOutput : number = getMostFrequentIntegerOf(testCase);
-  expectedOutput === actualOutput ?
-    console.log('\x1b[32m', actualOutput) :
-    console.log('\x1b[31m', `${actualOutput}, but expected ${expectedOutput}.`);
-});
+testingUtils.runTestsTo(getMostFrequentIntegerOf, testCases);
