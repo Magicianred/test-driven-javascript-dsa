@@ -1,2 +1,2 @@
-# Sugarless, Test-Driven TypeScript Data Structures & Algorithms
-Common problems, full solutions and explanations for data structures and algorithms implemented with *sugarless*, "independent" (besides Node.js runtime and TypeScript-compiler dependency), test-driven TypeScript.
+# Test-Driven JavaScript Data Structures & Algorithms
+Data structures and algorithms problem solving implemented with test-driven, JavaScript.
