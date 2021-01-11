@@ -3,7 +3,6 @@
 <h3 align="center">Data structures and algorithms problem solving implemented with test-driven JavaScript.</h3>
 <br>
 <hr>
-<br>
 <p>
 Maybe writing all unit tests ahead of time to cover all possible edge cases for a specific function is quite impractical due to time always being against us; hopefully, the practice of test-driven development, with the time we can give it, can aid a mindset of considering the full breadth of scenarios for often open-ended problems and their potential solutions.
 <br><br>
