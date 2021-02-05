@@ -1,7 +1,7 @@
 /*
  *
  *  Print the number of times "Fizz", "Buzz", and "FizzBuzz" 
- *  should be printed based on the "FizzBuzz" problem 
+ *  should be printed based on the classic FizzBuzz problem 
  *  given any positive integer.
  * 
  *  Note: For this version of the problem, count "Fizz", "Buzz",
@@ -9,7 +9,7 @@
  * 
  *  =================================================================
  *  
- *  Original Fizz Buzz Problem:
+ *  Original FizzBuzz Problem:
  * 
  *  Write a program that prints the numbers from 1 to 100; 
  *  however, for multiples of 3 print "Fizz" instead of the number;
