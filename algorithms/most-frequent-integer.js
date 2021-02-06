@@ -4,7 +4,7 @@
  *
  */
 
-const testingUtils = require('./testing-utils.js');
+const testingUtils = require('../utilities/testing-utils.js');
 
 const testCases = [
   // Case 1: [1, 2, 2, 4, 0.5, 0.5, 0.5, 3] => 2
@@ -35,7 +35,7 @@ const testCases = [
   [1, 1]
 ];
 
-function getMostFrequentIntegerOf(numbers) {
+const getMostFrequentIntegerOf = (numbers) => {
   let mostFrequent = 0;
   const count = {};
 
