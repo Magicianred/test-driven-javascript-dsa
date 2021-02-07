@@ -19,21 +19,21 @@ This is my own educational journey of understanding the how and why for JavaScri
 
 ### Navigate to location of file of JavaScript data-structure or algorithm problem-solution
 
-```console
+```bash
 ~/test-driven-javascript-dsa (main) $ cd algorithms
 ```
 <br>
 
 ### Use the `node` command to run the JavaScript program to run test cases for solution.
 
-```console
+```bash
 ~/test-driven-javascript-dsa/algorithms (main) $ node fizzbuzz.js
 ```
 <br>
 <h3>If all test pass, all output should display in <span style="color: #12bc79">green</span>.</h3>
 
 
-```console
+```bash
 $ node fizzbuzz.js
 
  ✓ Output is Fizz: 33, Buzz: 20, FizzBuzz: 6 as expected.
@@ -51,7 +51,7 @@ $ node fizzbuzz.js
 <br>
 <h3>If any test fails, the output for the test case and the test suite result should display in <span style="color: #cd2822">red</span>.</h3>
 
-```console
+```bash
 $ node fizzbuzz.js
 
  ✓ Output is Fizz: 33, Buzz: 20, FizzBuzz: 6 as expected.
