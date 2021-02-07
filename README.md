@@ -16,27 +16,22 @@ This is my own educational journey of understanding the how and why for JavaScri
 
 ## Running Tests for JavaScript Data Structure or Algorithm Implementations
 ***
-<br>
 
 ### Navigate to location of file of JavaScript data-structure or algorithm problem-solution
-<br>
 
 ```console
 ~/test-driven-javascript-dsa (main) $ cd algorithms
 ```
 <br>
-<br>
 
 ### Use the `node` command to run the JavaScript program to run test cases for solution.
-<br>
 
 ```console
 ~/test-driven-javascript-dsa/algorithms (main) $ node fizzbuzz.js
 ```
 <br>
-<br>
 <h3>If all test pass, all output should display in <span style="color: #12bc79">green</span>.</h3>
-<br>
+
 
 ```console
 $ node fizzbuzz.js
@@ -54,9 +49,7 @@ $ node fizzbuzz.js
 
 ```
 <br>
-<br>
 <h3>If any test fails, the output for the test case and the test suite result should display in <span style="color: #cd2822">red</span>.</h3>
-<br>
 
 ```console
 $ node fizzbuzz.js
@@ -73,6 +66,5 @@ $ node fizzbuzz.js
  ✖ 1 of 7 tests for 'getNumberOfFizzBuzzWith' solution failed.
 
 ```
-<br>
 <br>
 <br>
