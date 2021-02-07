@@ -1,6 +1,6 @@
 <h1 align="center"><b>Test-Driven JavaScript Data Structures & Algorithms</b></h1>
 <br>
-<h3 align="center">Data structures and algorithms problem solving implemented with test-driven JavaScript.</h3>
+<h3 align="center">Data structures and algorithms implemented with test-driven JavaScript.</h3>
 <br>
 <hr>
 <p>
