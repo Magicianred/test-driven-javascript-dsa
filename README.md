@@ -63,7 +63,7 @@ $ node fizzbuzz.js
  ✓ Output is Fizz: 5, Buzz: 3, FizzBuzz: 1 as expected.
  ✖ Output is Fizz: 3, Buzz: 2, FizzBuzz: 0 but expected Fizz: 33333, Buzz: 19999, FizzBuzz: 6666.
 
- ✖ 1 of 7 tests for 'getNumberOfFizzBuzzWith' solution failed.
+ ✖ 1 of 8 tests for 'getNumberOfFizzBuzzWith' solution failed.
 
 ```
 <br>

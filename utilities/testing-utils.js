@@ -18,5 +18,5 @@ exports.runTestsTo = (solution, testCases) => {
   
   failureCount < 1 ? 
     console.log('\x1b[32m', `✓ All tests for '${solution.name}' solution passed.`) : 
-    console.log('\x1b[31m', `✖ ${failureCount} of ${testCases.length - 1} tests for '${solution.name}' solution failed.`)
+    console.log('\x1b[31m', `✖ ${failureCount} of ${testCases.length} tests for '${solution.name}' solution failed.`)
 }
