@@ -4,8 +4,11 @@
  *  should be printed based on the classic FizzBuzz problem 
  *  given any positive integer.
  * 
- *  Note: For this version of the problem, count "Fizz", "Buzz",
- *  and "FizzBuzz" once for each number that meets the "FizzBuzz" condition.
+ *  Problem Modification: 
+ *  
+ *  For this version of the problem, count "Fizz", "Buzz",
+ *  and "FizzBuzz" for each positive integer that 
+ *  meets all 3 conditions.
  * 
  *  =================================================================
  *  
