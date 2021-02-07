@@ -15,7 +15,7 @@ This is my own educational journey of understanding the how and why for JavaScri
 <br>
 
 ## Running Tests for a JavaScript Data Structure or Algorithm
-***
+<br>
 
 ### Navigate to location of file of JavaScript data-structure or algorithm problem-solution
 
