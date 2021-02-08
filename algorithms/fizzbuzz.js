@@ -23,6 +23,8 @@
  * 
  */
 
+'use strict';
+
 const testingUtils = require('../utilities/testing-utils.js');
 
 const testCases = [
@@ -52,7 +54,8 @@ const testCases = [
 ];
 
 const getNumberOfFizzBuzzWith = count => {
-  let fizz = buzz = fizzbuzz = 0;
+  let fizz, buzz, fizzbuzz;
+  fizz = buzz = fizzbuzz = 0;
   
   for (let i = 1; i <= count; i++) {
     let f = i % 3 === 0, b = i % 5 === 0;
