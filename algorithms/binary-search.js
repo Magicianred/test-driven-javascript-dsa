@@ -1,6 +1,6 @@
 /*
  *
- *  Search for an element in an array and return it's index.
+ *  Search for an element in a sorted array and return it's index.
  * 
  */
 
@@ -34,14 +34,14 @@ const testCases = [
   [2, 5, 8, 12, 15, 23, 36, 45, 54, 99, -1]
 ];
 
-const indexFromBinarySearchFor = (array, target = array.pop()) => {
-  let mid, low = 0, high = array.length - 1;
+const indexFromBinarySearchFor = (sortedArray, target = sortedArray.pop()) => {
+  let mid, low = 0, high = sortedArray.length - 1;
 
   while(low <= high) {
     mid = Math.floor((high + low) / 2);
     
-    if (target === array[mid]) return mid;
-    else if (target > array[mid]) low = mid + 1
+    if (target === sortedArray[mid]) return mid;
+    else if (target > sortedArray[mid]) low = mid + 1
     else high = mid - 1;
   }
   return -1;
