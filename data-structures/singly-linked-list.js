@@ -1,3 +1,5 @@
+'use strict';
+
 const testingUtils = require('../utilities/testing-utils');
 
 const testCases = [
@@ -129,7 +131,7 @@ SinglyLinkedList.prototype.remove = function (value) {
       curr = curr.next;
 
     if (curr.next.value === value) {
-      if (curr.next === null) delete curr;
+      if (curr.next === null) curr = undefined;
       else curr.next = curr.next.next;
     }
   }
