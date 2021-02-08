@@ -1,3 +1,5 @@
+'use strict';
+
 exports.runTestsTo = (solution, testCases) => {
   let failureCount = 0;
 
