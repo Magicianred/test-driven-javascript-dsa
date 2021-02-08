@@ -1,7 +1,7 @@
 exports.runTestsTo = (solution, testCases) => {
   let failureCount = 0;
 
-  // Add line break for console output.
+  // Add line break to console output.
   console.log();
 
   testCases.forEach(testCase => {
@@ -13,7 +13,7 @@ exports.runTestsTo = (solution, testCases) => {
       (failureCount++, console.log('\x1b[31m', `✖ Output is ${actualOutput} but expected ${expectedOutput}.`));
   });
 
-  // Add line break for console output.
+  // Add line break to console output.
   console.log();
   
   failureCount < 1 ? 
