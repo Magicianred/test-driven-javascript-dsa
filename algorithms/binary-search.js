@@ -1,3 +1,11 @@
+/*
+ *
+ *  Search for an element in an array and return it's index.
+ * 
+ */
+
+'use strict';
+
 const testingUtils = require('../utilities/testing-utils');
 
 const testCases = [
@@ -27,7 +35,7 @@ const testCases = [
 ];
 
 const indexFromBinarySearchFor = (array, target = array.pop()) => {
-  let low = 0, high = array.length - 1;
+  let mid, low = 0, high = array.length - 1;
 
   while(low <= high) {
     mid = Math.floor((high + low) / 2);
