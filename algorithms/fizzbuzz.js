@@ -51,7 +51,7 @@ const testCases = [
   [99999, `Fizz: ${Math.floor(99999/3)}, Buzz: ${Math.floor(99999/5)}, FizzBuzz: ${Math.floor(99999/15)}`]
 ];
 
-const getNumberOfFizzBuzzWith = (count) => {
+const getNumberOfFizzBuzzWith = count => {
   let fizz = buzz = fizzbuzz = 0;
   
   for (let i = 1; i <= count; i++) {

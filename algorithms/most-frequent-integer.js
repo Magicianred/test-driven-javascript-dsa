@@ -35,7 +35,7 @@ const testCases = [
   [1, 1]
 ];
 
-const getMostFrequentIntegerOf = (numbers) => {
+const getMostFrequentIntegerOf = numbers => {
   let mostFrequent = 0;
   const count = {};
 

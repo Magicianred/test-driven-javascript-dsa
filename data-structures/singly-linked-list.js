@@ -154,7 +154,7 @@ SinglyLinkedList.prototype.print = function () {
   return `${list}${curr ? `${curr.value} => ${curr.next}` : 'null'}`;
 };
 
-const testSinglyLinkedListMethodsWith = function (operations) {
+const testSinglyLinkedListMethodsWith = operations => {
   let singlyLinkedList = undefined;
 
   for (const operator in operations[0]) {
