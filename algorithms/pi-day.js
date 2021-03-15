@@ -1,6 +1,6 @@
 /*
  *
- *  Efficiently calculate Math.PI for Pi Day.
+ *  Efficiently compute Math.PI for Pi Day.
  * 
  */
 
@@ -13,6 +13,8 @@ const testCases = [
   [undefined, Math.PI]
 ];
 
-const pi = () => Math.floor((16 * Math.atan(1 / 5) - (4 * Math.atan(1 / 239))) * (10 ** 15)) / (10 ** 15);
+const pi = 
+  () => 
+    Math.floor((16 * Math.atan(1 / 5) - (4 * Math.atan(1 / 239))) * (10 ** 15)) / (10 ** 15);
 
 testingUtils.runTestsTo(pi, testCases)
