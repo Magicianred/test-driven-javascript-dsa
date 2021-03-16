@@ -18,7 +18,10 @@ exports.runTestsTo = (solution, testCases) => {
   // Add line break to console output.
   console.log();
   
-  failureCount < 1 ? 
-    console.log('\x1b[32m', `✓ All tests for '${solution.name}' solution passed.`) : 
+  failureCount <= 0 ? 
+    console.log('\x1b[32m', `✓ All tests for '${solution.name}' solution passed.`) :
+  
+  failureCount === testCases.length ?
+    console.log('\x1b[31m', `✖ All tests for '${solution.name}' solution failed.`) : 
     console.log('\x1b[31m', `✖ ${failureCount} of ${testCases.length} tests for '${solution.name}' solution failed.`)
 }
