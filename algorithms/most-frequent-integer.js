@@ -4,16 +4,16 @@
  *
  */
 
-'use strict';
+"use strict";
 
-const testingUtils = require('../utilities/testing-utils.js');
+const testingUtils = require("../utilities/testing-utils.js");
 
 const testCases = [
   // Case 1: [1, 2, 2, 4, 0.5, 0.5, 0.5, 3] => 2
   [1, 2, 2, 4, 0.5, 0.5, 0.5, 3, 2],
-  
+
   // Case 2: [3, 5, 7] => 3
-  [3, 5, 7, 3], 
+  [3, 5, 7, 3],
 
   // Case 3: [4, 5, 89, 5, 1] => 5
   [4, 5, 89, 5, 1, 5],
@@ -34,19 +34,19 @@ const testCases = [
   [Number.NEGATIVE_INFINITY, Number.NEGATIVE_INFINITY, 0, 0],
 
   // Case 9: [1, 1] => 1
-  [1, 1]
+  [1, 1],
 ];
 
-const getMostFrequentIntegerOf = numbers => {
+const getMostFrequentIntegerOf = (numbers) => {
   let mostFrequent = 0;
   const count = {};
 
   for (const x of numbers) {
-    if (x % 1 === 0) count[`${x}`] ? count[`${x}`]++ : count[`${x}`] = 1;
+    if (x % 1 === 0) count[`${x}`] ? count[`${x}`]++ : (count[`${x}`] = 1);
     if (count[`${x}`] > (count[`${mostFrequent}`] ?? 0)) mostFrequent = x;
-  };
+  }
 
   return mostFrequent;
-}
+};
 
 testingUtils.runTestsTo(getMostFrequentIntegerOf, testCases);
