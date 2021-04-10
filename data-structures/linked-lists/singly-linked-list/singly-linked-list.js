@@ -1,6 +1,6 @@
 "use strict";
 
-const testingUtils = require("../utilities/testing-utils");
+const testingUtils = require("../../../utilities/testing-utils");
 
 const testCases = [
   // Case 1:

@@ -1,4 +1,4 @@
-const testUtils = require('../../utilities/testing-utils');
+const testUtils = require('../../../utilities/testing-utils');
 const testCases = [
   [1,'\'not a singly-linked list\''],
   [[], '\'empty list\''],
